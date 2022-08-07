@@ -1,38 +1,41 @@
+* {
+  padding: 0;
+   margin: 0;
+   box-sizing: border-box; /*como se van a comportar las prop de ancho y alto como se va dibujar o calcular esos bordes o dimensiones de las cajas que creamos*/
+}
+
+html,
+body {
+  background-color: #1b1b32;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 15px;
+  font-family: Lato, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.freecodecamp-logo-contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.freecodecamp-logo {
+  height: 50px;
+}
+
+.contenedor-contador {
+  height: 550px;
+  min-width: 600px;
+  display: flex; /*para tener los elementos en su linea individual*/
+  flex-wrap: wrap; 
+  flex-direction: column; /*para que se agrupen como una columna, es decir uno abajo del otro*/
+  align-items: center;
+  justify-content: center;
 }
